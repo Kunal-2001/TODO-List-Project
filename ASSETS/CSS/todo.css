@@ -1,0 +1,106 @@
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+#container{
+	
+	width: 600px;
+	margin: 100px auto;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    
+}
+
+.completed{
+	color: gray;
+	text-decoration: line-through;
+}
+
+h1{
+	background-color:  #C19A6B;
+    color: white;
+    margin: 0 ;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+ul{
+	
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: roboto;
+background-image: url("https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+height: 500px;
+background-size: cover;
+}
+
+li{
+	background: #fff;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    list-style: none;
+}
+/*this shows that every 2nd li will have different backgorund color*/
+li:nth-child(2n){
+	background: #f7f7f7;
+}
+
+input{
+	font-size: 18px;
+	background: #f7f7f7;
+	width: 100%;
+	padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    color: #2980b9;
+    border: 3px solid rgba(0 , 0 , 0 , 0 );
+}
+
+/*when focused on the input it will change the proprties */
+input:focus{
+	background: #fff;
+	border: 3px solid  rgb(130, 82, 1);
+	outline: none; 
+}
+
+.fa-plus{
+	float: right;
+}
+
+span{
+	background: rgb(130, 82, 1);
+	height: 40px;
+	margin-right: 20px;
+	color: white;
+	width: 0px;
+	display: inline-block;
+	text-align: center;
+	transition: 0.3s;
+	
+}
+
+li:hover span{
+	width: 60px;
+	opacity: 1.0;
+}
+
+.fa-plus:hover{
+
+	color: black;
+}
+
+input::-webkit-input-placeholder{
+
+	opacity: 0.7;
+}
